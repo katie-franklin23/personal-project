@@ -10,7 +10,7 @@ function App() {
   const fetchPlaylist = () => {
     getPlaylists()
       .then((response) => {
-        setPlaylist(response.body)
+        setPlaylist(response.body.playlists)
       })
       .catch((error) => {
         console.log(error)
